@@ -40,7 +40,7 @@ Populiariausios: Eclipse, Visual Studio, PHPStorm.
 •	Integruotas kompiliatoriaus valdymas ar pats kompiliatorius
 •	Grafinis programos struktūros vaizdavimas;
 
-##Versijavimas
+## Versijavimas
 
 **Kas yra versijavimas?** 
 
