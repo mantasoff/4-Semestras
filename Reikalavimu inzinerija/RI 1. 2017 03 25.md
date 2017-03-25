@@ -2,77 +2,76 @@
 
 **Kas yra vadinama reikalavimu?**
 
-PS reikalavimu vadinama sandoriu su uþsakovu, specifikacija, standartu arba kokiu nors kitu juridinæ galià turinèiu dokumentu numatyta tos sistemos savybë. Jie gali bûti visiðkai abstraktûs, arba tikslûs. Turi atsakyti á ðiuos klausimus:
-- Kokià iðeigà generuos sistema?
+PS reikalavimu vadinama sandoriu su užsakovu, specifikacija, standartu arba kokiu nors kitu juridinę galią turinčiu dokumentu numatyta tos sistemos savybė. Jie gali bûti visiškai abstraktūs, arba tikslūs. Turi atsakyti į šiuos klausimus:
+- Kokia išeigą generuos sistema?
 - Kokia tvarka bus pateikti rezultatai?
-- Ar programa raðys á pradiniø duomenø failà ir t.t.
+- Ar programa rašys į pradinį duomenų failą ir t.t.
 
-**Kas yra reikalavimø nustatymas?**
+**Kas yra reikalavimo nustatymas?**
 
 Procesas, kuriuo nustatoma, kokias paslaugas turi teikti sistema ir kokius ribojimus ta sistema turi tenkinti teikdama tas paslaugas.
 
-**Kokios yra reikalavimø rûðys?**
+**Kokios yra reikalavimų rūšys?**
 
-- Vartotojo poreikiai (operaciniai poreikiai): Turi taip apraðyti reikalavimus, kad jie bûtø suprantami þmonëms, tik pavirðutiniðkai susipaþinusiems su tuo, kas yra kompiuteriai ir programø sistemos. (skirti vartotojams ir uþsakovams)
-- Sistemos reikalavimai: Tam tikru specialiu bûdu struktûrizuotas detalus sistemos teikiamø paslaugø ir jos tenkinamø ribojimø apraðas. (raðomi kaip sudëtinë uþsakovo ir vykdytojo sandorio dalis.
-- Projektiniai reikalavimai: Abstraktus programø sistemos ágyvendinimo bûdo apraðas, naudojamas kaip iðeities ribojimai detaliai projektuojant sistemà. (skirti vykdytojams)
+- Vartotojo poreikiai (operaciniai poreikiai): Turi taip aprašyti reikalavimus, kad jie būtų suprantami žmonėms, tik paviršutiniškai susipažinusiems su tuo, kas yra kompiuteriai ir programø sistemos. (skirti vartotojams ir užsakovams)
+- Sistemos reikalavimai: Tam tikru specialiu būdu struktūrizuotas detalus sistemos teikiamų paslaugų ir jos tenkinamų ribojimų aprašas. (rašomi kaip sudėtinė užsakovo ir vykdytojo sandorio dalis.
+- Projektiniai reikalavimai: Abstraktus programų sistemos įgyvendinimo būdo aprašas, naudojamas kaip išeities ribojimai detaliai projektuojant sistemą. (skirti vykdytojams)
 
 Vartotojo ir sistemos reikalavimai yra skirtingo lygmens, nes juos skaito skirtingi skaitytojai ir jie naudojami kitiems tikslams:
-- Vartotojam nesvarbu kaip sistema bus ágyvendinta.
-- Sistemos reikalavimuose reikia tiksliai þinoti kà sistema turi atlikti, nes skaitytojai turës tai ágyvendinti.
+- Vartotojam nesvarbu kaip sistema bus įgyvendinta.
+- Sistemos reikalavimuose reikia tiksliai žinoti ką sistema turi atlikti, nes skaitytojai turės tai įgyvendinti.
 
 **Kas yra reikalavimø formulavimas?**
 
-Procesas, kuriuo operaciniai poreikiai yra pertvarkomi á tikslø iðsamø apraðà, kà sistema darys ir kaip ji veiks. 
-Daug svarbiø programø sistemø þlunga dar kûrimo stadijoje kai yra blogai tvarkomasi su reikalavimis. Privaloma suformuluoti pilnai reikalavimus ir jø nekaitalioti.
+Procesas, kuriuo operaciniai poreikiai yra pertvarkomi į tikslų išsamų aprašą, ką sistema darys ir kaip ji veiks. 
+Daug svarbių programų sistemų žlunga dar kūrimo stadijoje kai yra blogai tvarkomasi su reikalavimais. Privaloma suformuluoti pilnai reikalavimus ir jų nekaitalioti.
 
+**Kas yra reikalavimų specifikacija?**
 
-**Kas yra reikalavimø specifikacija?**
+Tai dokumentas, aprašantis ką turi daryti sistema ir kokius kitus reikalavimus ji turi tenkinti. 
 
-Tai dokumentas, apraðantis kà tur daryti sistema ir kokius kitus reikalavimus ji turi tenkinti. 
+**Kodėl reikia formuluoti reikalavimus?**
 
-**Kodël reikia formuluoti reikalavimus?**
+Pradedant programavimo darbus, neturint reikalavimus, bandoma sutaupyti laiko ir pinigų. Tačiau tai tik iliuzija, kadangi ką pavykstama sutaupyti tokiu būdu yra prarandama dėl žemos sistemos kokybės ir sunkumo ką nors joje pakeisti.
 
-Pradedant programavimo darbus, neturint reikalavimus, bandoma sutaupyti laiko ir pinigø. Taèiau tai tik iliuzija, kadangi kà pavykstama sutaupyti tokiu bûdu yra prarandama dël þemos sistemos kokybës ir sunkumø kà nors joje pakeisti.
-
-**Koks reikalavimas turi bûti:**
-1. Abstraktus: tai toks, jei jis suformuluotas juodosios dëþës principu: kai nëra kalbama kaip tai reikia realizuoti sistemoje.
-2. Iðsamus: kai jis gali bûti nagrinëjimas ne tik kai nagrinëjimas su kitais reikalavimais, bet ir atskirai.
-3. Tikslus: visi jame vartojami terminai turi tik grieþtas apibrëþtas reikðmes. (jokiø maþdaug beveik, apytikslia, patogus, nedaug, greitas). Formalios specifikacijos yra tikslios, bet jas sudëtinga apraðyti ir sunku skaityti. Naturaliàja kalba apraðyti yra lengva, bet daþnai yra netikslûs.
-4. Vienareikðmis: negalima interpretuoti keliais skirtingais bûdais. 
-5. Verifikuojamas: þinomas ir prieitnamas baigtinis ir kainos bei kitais poþiûriais priimtinas procesas (testavimas, analizë) kurá taikant galima nustatyti ar reikalavimas yra ágyvendintas. (netiksûs neverifikuomas.
-6. Ágyvendinimas: þinomas ir prieinamas ekonominiu, juridiniu bei kitais poþiûriais priimtinas technologinis procesas, kurio inovaciniai slenksèiai gali bûti paðalinti per priimtinà laikotarpá ir uþ priimtinà kainà ir kurá taikant galima sukurti sistemà, turinèià tuo reikalavimu specifikuojamà savybæ.
-7. Integruojamas: sujungus su kitais reikalavimais, yra gaunamas tarpusavyje suderintø reikalavimø rinkinys.
-8. Lokalizuojamas: susiejamas su vienu ar keliais konkrenèiais sistemos komponentais, ágyvendinanèiais tà reikalavimà. (ne visi yra lokalizuojami. Sistemos aplinkos reikalavimai, projektavimo standartai galioja visiems komponentams)
-9. Transuojamas: Vienareikðmiðkai ávardinamas ir turi nuorodà á savo ðaltiná. (turi unikalø numerá). Trasavimas reikalingas reikalavimø valdymui. Padarius kokius nors reikalavimø pakeitimus, trasuojant nustatoma, kokie aukðtesniøjø ir þemesniøjø lygmenø reikalavimai yra susijæ su keièiamu reikalavimu. Sprendþiama ar reikia keisti.
-10. Unikalus: Nëra kartojama kituose reikalavimuose pateikta informacija.
-11. Glaustas: nëra pagrindimo, apibrëþèiø ar kitø nebûtinø dalykø.
-12. Suprantamas: paraðytas nevartojant tik specialistams suprantamø terminø ir yra aiðkiai pasakyta, kokià funkcinæ ar nefunkcinæ savybæ privalo turëti sistema.
+**Koks reikalavimas turi būti:**
+1. Abstraktus: tai toks, jei jis suformuluotas juodosios dėžės principu: kai nėra kalbama kaip tai reikia realizuoti sistemoje.
+2. Išsamus: kai jis gali bûti nagrinėjimas ne tik kai nagrinėjimas su kitais reikalavimais, bet ir atskirai.
+3. Tikslus: visi jame vartojami terminai turi tik griežtas apibrėžtas reikšmes. (jokių maždaug beveik, apytiksliai, patogus, nedaug, greitas). Formalios specifikacijos yra tikslios, bet jas sudėtinga aprašyti ir sunku skaityti. Naturaliąja kalba aprašyti yra lengva, bet dažnai yra netikslûs.
+4. Vienareikšmis: negalima interpretuoti keliais skirtingais būdais. 
+5. Verifikuojamas: žinomas ir prieinamas baigtinis ir kainos bei kitais požiūriais priimtinas procesas (testavimas, analizë) kurį taikant galima nustatyti ar reikalavimas yra įgyvendintas. (netikslus neverifikuomas.
+6. Įgyvendinimas: žinomas ir prieinamas ekonominiu, juridiniu bei kitais poþiūriais priimtinas technologinis procesas, kurio inovaciniai slenksščiai gali bûti pašalinti per priimtiną laikotarpį ir už priimtiną kainą ir kurį taikant galima sukurti sistemà, turinčią tuo reikalavimu specifikuojamą savybę.
+7. Integruojamas: sujungus su kitais reikalavimais, yra gaunamas tarpusavyje suderintų reikalavimų rinkinys.
+8. Lokalizuojamas: susiejamas su vienu ar keliais konkrenčiais sistemos komponentais, įgyvendinančiais tą reikalavimą. (ne visi yra lokalizuojami. Sistemos aplinkos reikalavimai, projektavimo standartai galioja visiems komponentams)
+9. Trasuojamas: Vienareikšmiškai įvardinamas ir turi nuorodą į savo šaltinį. (turi unikalų numerį). Trasavimas reikalingas reikalavimo valdymui. Padarius kokius nors reikalavimo pakeitimus, trasuojant nustatoma, kokie aukštesniojo ir žemesniojo lygmens reikalavimai yra susiję su keičiamu reikalavimu. Sprendžiama ar reikia keisti.
+10. Unikalus: Nėra kartojama kituose reikalavimuose pateikta informacija.
+11. Glaustas: nėra pagrindimo, apibrėžimų ar kitų nebutinų dalykų.
+12. Suprantamas: paraštas nevartojant tik specialistams suprantamų terminų ir yra aiškiai pasakyta, kokią funkcinę ar nefunkcinę savybę privalo turėti sistema.
 
 **Funkciniai ir nefunkciniai reikalavimai:**
 
-- Funkciniai reikalavimai: kokias paslaugas privalo teikti sistema, kokia turi bûti jos reakcja á konkreèius stimulus ir kaip ji turi elgtis konkreèiose situacijose.
-- Nefunkciniai reikalaviai: ribojimai potencialiai galimø projektiniø sprendimø aibei. Apiba ribojimus teikimo bûdu (pvz, trukmë), ágyvendinamoms funkcijoms (pvz, patikimumas), standartai. Vykdymo reikalavimai yra nefunkciniai reikalavimai.
+- Funkciniai reikalavimai: kokias paslaugas privalo teikti sistema, kokia turi būti jos reakcja į konkrečius stimulus ir kaip ji turi elgtis konkrečiose situacijose.
+- Nefunkciniai reikalaviai: ribojimai potencialiai galimų projektinių sprendimų aibei. Apima ribojimus teikimo bûdu (pvz, trukmė), įgyvendinamoms funkcijoms (pvz, patikimumas), standartai. Vykdymo reikalavimai yra nefunkciniai reikalavimai.
 
 **Funkciniai reikalavimai:**
 
-Apraðo sistemos funkcionalumà bei jos teikiamas paslaugas. Paslaugø pobûdis priklauso nuo kuriamos árangos pobûdþio ir vartotojø pobûdþio.
-Vartotojo lygmens funckiniai rekalavimai gali gana bendrai apraðyti, kà turi daryti sistema, bet sistemos lygmens funckiniai reikalavimai privalo specifikuoti labai detaliai. Pvz.:
-•	Vartotojui turi bûti leista egzamino rezultatus perþiûrëti ekrane.
-•	Studentui turi bûti sudaryta galimybë laikyti egzaminà per internetà.
-•	Sistema privalo ávertinti studentø atsakymus.
+Aprašo sistemos funkcionalumą bei jos teikiamas paslaugas. Paslaugų pobūdis priklauso nuo kuriamos įrangos pobûdžio ir vartotojo pobūdžio.
+Vartotojo lygmens funckiniai rekalavimai gali gana bendrai aprašyti, ką turi daryti sistema, bet sistemos lygmens funckiniai reikalavimai privalo specifikuoti labai detaliai. Pvz.:
+•	Vartotojui turi bûti leista egzamino rezultatus peržiûrëti ekrane.
+•	Studentui turi bûti sudaryta galimybė laikyti egzaminą per internetą.
+•	Sistema privalo įvertinti studento atsakymus.
 
 **Vartotojo lygmens funckiniai reikalavimai:** 
-- Kokias áeigas (komandas, duomenis) sistema turi gebëti apdoroti.
+- Kokias įeigas (komandas, duomenis) sistema turi gebėti apdoroti.
 - Kokius rezultatus sistema turi generuoti.
-- Kokius duomenis sistema privalo ásiminti ir padaryti prieinamus kitoms sistemoms.
-- Kokius skaièiavimus sitema privalo atlikti.
+- Kokius duomenis sistema privalo įsiminti ir padaryti prieinamus kitoms sistemoms.
+- Kokius skaičiavimus sitema privalo atlikti.
 
-**Funkciniai reikalavimai apraðo:**
-- Pagrindiná (probleminá) sistemos funkcionalumà; (t.y. funkcionalumà, kurio reikia patenkinti vartotojø operacinius poreikius, nusakytus uþduotimis koncepciniame verslo modelyje).
-- Pagalbiná funcionalumà. (t.y. funkcionalumà, kurio reikia sitemai aptarnauti priþiûrëti, admininstruoti arba darbui su ja palengvinti.
-Apraðo visas sistemos ágyvendinamas funkcijas:
-- Poreikiø specifikacijoje apraðytus operacinius vart. poreikius .
-- Funckiniai reikalavimai yra iðvedami ið verslo koncepciniame modelyje specifikuotø uþduoèiø.
+**Funkciniai reikalavimai aprašo:**
+- Pagrindinį (probleminį) sistemos funkcionalumą; (t.y. funkcionalumą, kurio reikia patenkinti vartotojo operacinius poreikius, nusakytus užduotimis koncepciniame verslo modelyje).
+- Pagalbinį funcionalumą. (t.y. funkcionalumą, kurio reikia sitemai aptarnauti prižiūrėti, admininstruoti arba darbui su ja palengvinti.
+Aprašo visas sistemos įgyvendinamas funkcijas:
+- Poreikių specifikacijoje apraðytus operacinius vart. poreikius .
+- Funckiniai reikalavimai yra išvedami iš verslo koncepciniame modelyje specifikuotų užduočių.
 
 
