@@ -1,0 +1,81 @@
+IDE
+Kas yra IDE?
+Tai yra vieninga aplinka, kurioje galima atlikti visus veiksmus susijusius su program kûrimu, t.y. ðioje aplinkoje galima pasinaudoti visomis reikiamomis programomis (tekstø redaktorium, transliatoriumi, ryðiø redaktoriumi, derintoju).
+Pavyzdþiai:
+Agile, Scrum, Redmine
+Scrum<Agile<Lean<SystemsThinking.
+Agile scrum metodas:
+ Projektø valdymo metodas produkto ar paslaugos kûrimas organizuojamas kuo trumpesniais ciklais. Gavus pradinæ versijà, aiðkiau suprantamas dydis projekto, rizikos ir t.t.
+Scrum metodas:
+Backlog -> Iðdalinam á dalis ir paskirstom scrum lentelëje sprintais -> Produktas.
+Kas yra redmine?
+Atvirojo kodo internetinë projektø ir darbø valdymo Sistema.
+Kas yra projekto organizavimas? 
+a) Uþduoèiø paskirstymas.
+b) Klaidø registravimas.
+c) Pakeitimø vykdymo sekimas
+Kas yra integruotos program kûrimo aplinkos?
+Programos, kurios turi daug priemoniø, palengvinanèiø ir pagreitinanèiø programinës árangos kûrimo procesà.
+Vystymosi raida:
+Pirmoji: Dartmouth BASIC, Komandø pagrindu.
+Populiariausios: Eclipse, Visual Studio, PHPStorm.
+IDE savybës:
+•	Patogi grafinë vartotojo sàsaja.
+•	Automatinis teksto pabaigimas ir generavimas
+•	Galimybë derinti programas;
+•	Patogus versijø kontrolës sistemø klientas;
+•	Integruotas kompiliatoriaus valdymas ar pats kompiliatorius
+•	Grafinis programos struktûros vaizdavimas;
+?
+Versijavimas
+Kas yra versijavimas? 
+To reikia, nes:
+a) Iðlaikoma kodo pakeitimo istorija su komentarais.
+b) Naujos funkcijos yra fiksuojamos ðakoje (branch) ir jei prireiks, galite gráþti á pradinæ versijà (nuo kurios pradëjote).
+c) Daþna situacija – ápusëjus kurime, klientas randa bug‘à (arba pats pastebiu). Tokiu atvëju, visà progresà po bugo ádedam á atskirà branch‘à, ir master branch‘e sutvarkom bugà.
+d) Dirbant komandoje tenka apsikeisti kodo pakeitimais.
+Tikslai:
+Pagrindinis tikslas – pasiekti, kad bûtø lengva atsekti kokie darbai kokioje versijoje realizuoti, prie ko dirbama, kada testuojama, kokie darbai skirti ateities versijoms. 
+Populiarios sitemos?
+CVS,SVN,GIT,MERCURIAL.
+Kodël GIT?
+a) Patogus darbas su ðakomis;
+b) Aiðkus kodo susiejimas á bendrà projektà (merge)
+c) Platus informacijos pakeitimas;
+Git yra tekstiniø failø versijavimo technologija, kuri daþnai bûna ádiegtà programuotojams skirtose programose ir Linux operacinëse sistemose.
+Git veikia aplanko lygyje. (t.y. á tà paèià versijà átraukiami visø failø pasikeitimai, tada atstatant senesnæ versijà, nereikia atskirai analizuoti atstatinëti visø susijusiø failø.
+Pranaðumai:
+•	Git iðsiskiria tuo, kad jos versijos gali ðakotis. T.Y paraleliai gali bûti vedamos kelios chronologinës istorijos. Neturi priimti galutinës versijos. Galima dirbti su visomis vienu metu.
+•	Visas versijas lengva skaidyti ir sujungti. Tai leidþia su tuo paèiu tekstu dirbti visai komandai, paskui lengvai sujungti geriausias dalis ið visø bandymø.
+•	Naudojamas daþniausiai programavmo istorijø kontrolei. Taèiau já naudoja ir knygø raðymui, straipsniø, scenarijø ir pan.
+Funkcijos:
+a) Commit – fiksuojami tik pilni darbai.  Jei turime visà reikalingà informacijà. Jei darbo uþbaigti neiðeina, reikëtø sukurti ðakà ir á jà sudëti pakeitimus darbui. Poto daromas fiksavimas (amend commit) ir liktø visi pakeitimai po vienu fiksavimu.
+Ðakos: 
+Trys pagrindinës ðakos:
+•	Master; (pagrindinis) 
+•	Develop (plëtojamas)
+•	Testing (testuojamas)
+Papildomos:
+•	Hotfix (pataisa)
+•	Feature (funkcija)
+a) Develop – Visi keitimai pirmiausia fiksuojami develop (plëtojimo) ðakoje. Pirmiausia daromi aukðèiausio prioriteto atrimiausios versijos darbai, kadangi bûtinas testavimas, testing ðaka jungiama á develop.
+b) Testavimo (testing) – daromi tik pataisymai. Naujo funkcionalumo realizuoti ðioje ðakoje negalima.  Iðtestavus jungiama su master ir develop ðaka.
+C) Pagrindinë (master) – iðtestuoja pilnai funkcionuojanti versija. Ájungus testavimo ðakà á pagrindinæ turi bûti nurodyta þymë su versijos numeriu. Tiesiogiai pakeitimai nedaromi.
+d) Hotfix (pataisa) – jei randama klaida ir negalima traukti iki kitos versijos iðleidimo, kuriama pataisos ðaka. Iðtaisomi ir testuojami pasikeitimai. Kai viskas atlikta, jungiama su master ðaka ir jei tai su paskutinës ðakos pataisymai, jungiama ir su plëtojimo. Taisyti ne paskutinæ versijà nepatartina, nes teks leisti kiekvienai versijai.
+e) Funkcija (feature) reikalinga papildomos ateities versijoms, kuriø ðiuo metu nereikia diegti ar rodyti klientui.
+Git komandos:
+a) Git add – ádedama á lokalià pakeitimø kopijà.
+b) Git commit – keliami pakeitimai á repozitorijà, nurodant paskirtá.
+c) Git clone -  galima paimti kitø þmoniø kodo repozitorijos ir jas parsisiøsti su visa Git struktûra.
+d) Git push – jei norima ákelti  nutolusià repozitorijà (pvz. github)
+Prasmingiausias darbas tada, kada su repozitorija dirba daugiau nei vienas þmogus. 
+Pakeitimai konfliktai ir jø sprendimø bûdai:
+Daþniausiai atidaromi trys skirtingi failai. Dabartinë  lokali nauja kopija, sena lokali kopija ir naujausia versija esanti tam tikroje ðakoje. (M.P. Pats sukûriau, use at your own risk)
+a) Atðakos ir git merge komanda  - kartais apsimoka kodà raðyti atskiroje ðakoje, kurios niekas nemato, kol jûs neprijungiate jos prie pagrindinës ðakoje.
+b) GIT ignore – norint nieko nedaryti su failais ir jø neákelti á repozitorijà.
+Git extensions
+Grafinë vartotojo sàsaja, kuri leidþia kontroliuoti kodo versijavimà nenaudojant komandinës eilutës.
+Gitlab
+Skirtas talpinti ávairius projektus IT specialistams. Leidþia kurti atsargines kompijas, bei redaguoti projekto failus ir tvarkyti klaidas.
+Github
+Paprastas ir lengvai valdomas árankis, kuris padeda dalintis informacija apie projekto vystimasi
