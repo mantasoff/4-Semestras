@@ -1,4 +1,4 @@
-﻿##Pagrindiniai (1-31):
+﻿## Pagrindiniai (1-31):
 
 **1.Pateikite visą informaciją iš SALGRADE lentelės**
 desc salgrade;
@@ -94,7 +94,7 @@ select deptno,dname from ept where (select count (*) from emp where dept.deptno=
 **31. Pateikite skyrių pavadinimus ir mažiausią bei didžiausią atlyginimus tuose skyriuose.**
 select dname, (select min(sal) from emp group by emp.deptno having emp.deptno=dept.deptno) as MIN, (select max(sal) from emp group by emp.deptno having emp.deptno=dept.deptno) as MAX from dept;
 
-##Papildomi:
+## Papildomi:
 
 **1. Sukurkite užklausą, pateikiančią informaciją apie visus darbuotojus dirbančius nurodytose pareigose. Pareigas aprašykite pasinaudoję kintamuoju. Patikrinimo tikslu įvykdykite šią
 užklausą kelis kartus **
