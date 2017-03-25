@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\mancio\desktop\bibis\kursinis\kursinis\main.cpp(478): warning C4101: 'tikr3': unreferenced local variable
+c:\users\mancio\desktop\bibis\kursinis\kursinis\main.cpp(608): warning C4101: 'tikr3': unreferenced local variable
+  kursinis.vcxproj -> C:\Users\Mancio\Desktop\bibis\kursinis\Debug\kursinis.exe
+  kursinis.vcxproj -> C:\Users\Mancio\Desktop\bibis\kursinis\Debug\kursinis.pdb (Full PDB)
