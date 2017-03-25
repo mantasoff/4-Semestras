@@ -50,7 +50,7 @@ To reikia, nes:
 - Dažna situacija – įpusėjus kurime, klientas randa bug‘ą (arba pats pastebiu). Tokiu atvėju, visą progresą po bugo įdedam į atskirą branch‘ą, ir master branch‘e sutvarkom bugà.
 - Dirbant komandoje tenka apsikeisti kodo pakeitimais.
 
-**Tikslai:*
+**Tikslai:**
 
 Pagrindinis tikslas – pasiekti, kad bûtų lengva atsekti kokie darbai kokioje versijoje realizuoti, prie ko dirbama, kada testuojama, kokie darbai skirti ateities versijoms. 
 
