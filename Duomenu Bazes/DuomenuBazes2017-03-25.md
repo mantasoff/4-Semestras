@@ -6,7 +6,7 @@ desc salgrade;
 **2. Pateikite visą informacijai iš EMP lentelės apie darbuotojus, užimančius MANAGER pareigas.**
 select * from emp where upper(JOB) = 'MANAGER';
 
-**3. Pateikite darbuotojų, gaunančių atlyginimą nuo 1600 iki 3000, sąrašą (pavardę, skyriaus numerį, atlyginimą). **
+**3. Pateikite darbuotojų, gaunančių atlyginimą nuo 1600 iki 3000, sąrašą (pavardę, skyriaus numerį, atlyginimą).**
  select ename, deptno, sal from emp where sal>=1600 and sal<3000;
 
 **4. Pateikite skyrių numerių ir pavadinimų sąrašą, surūšiuotą pagal skyriaus pavadinimą abėcėlės tvarka (lentelė DEPT).**
@@ -40,25 +40,25 @@ select ename,trunc(sal*1.15) from emp;
 **13. Išveskite į ekraną darbuotojų pavardes, jų priėmimo į darbą ir atlyginimo peržiūrėjimo datas. Tarkime, kad atlyginimo peržiūrėjimo data (stulpelį pavadinkite REVIEW) yra po metų nuo priėmimo į darbą datos. Duomenis pateikite surūšiavus pagal atlyginimo peržiūrėjimo datos didėjimo tvarka.**
 select ename, hiredate, add_months(hiredate,12) as REVIEW from emp;
 
-**14. Pastebėta, kad 30-ame skyriuje ne visi pardavėjai vyrai. Išveskite į ekraną informaciją, kaip parodyta žemiau, pakeisdami SALESMAN į SALESPERSON. **
+**14. Pastebėta, kad 30-ame skyriuje ne visi pardavėjai vyrai. Išveskite į ekraną informaciją, kaip parodyta žemiau, pakeisdami SALESMAN į SALESPERSON.**
 select ename, deptno, case when initcap(job) = 'Salesman' THEN 'Salesperson' else initcap(job) end from emp; 
 
-**15. Suraskite mažiausią darbuotojų atlyginimą **
+**15. Suraskite mažiausią darbuotojų atlyginimą**
 select min(sal) from emp;
 
 **16. . Suraskite darbuotojų didžiausią, mažiausią ir vidutinį  atlyginimus.**
 select max(sal), min(sal), avg(sal) from emp;
 
-**17. Pateikite mažiausią ir didžiausią atlyginimus kiekvienoms pareigoms. **
+**17. Pateikite mažiausią ir didžiausią atlyginimus kiekvienoms pareigoms.**
 select job, max(sal) from emp group by job;
 
 **18. Suraskite, kiek yra vadovų, neišvardinant jų.**
 select count(*) from emp where upper(job) = 'MANAGER';
 
-**19. Paskaičiuokite atlyginimų vidurkį ir visų pajamų vidurkį kiekvienoms pareigoms. Nepamirškite, kad pardavėjai uždirba komisinius. **
+**19. Paskaičiuokite atlyginimų vidurkį ir visų pajamų vidurkį kiekvienoms pareigoms. Nepamirškite, kad pardavėjai uždirba komisinius.**
 select job, avg(sal), case when upper(job)='SALESMAN' then avg(sal+comm) ELSE avg(sal) from emp group by job;
 
-**20. Suraskite skirtumą tarp didžiausio ir mažiausio darbo užmokesčio. **
+**20. Suraskite skirtumą tarp didžiausio ir mažiausio darbo užmokesčio.**
 select max(sal)-min(sal) from emp;
 
 **21. Suraskite visus skyrius, kuriuose dirba daugiau kaip 3 darbuotojai.**
@@ -97,18 +97,18 @@ select dname, (select min(sal) from emp group by emp.deptno having emp.deptno=de
 ## Papildomi:
 
 **1. Sukurkite užklausą, pateikiančią informaciją apie visus darbuotojus dirbančius nurodytose pareigose. Pareigas aprašykite pasinaudoję kintamuoju. Patikrinimo tikslu įvykdykite šią
-užklausą kelis kartus **
+užklausą kelis kartus**
 define kintamasis = 'CLERK'; 
 select ename, job,sal, mgr, deptno from emp where upper(job) = upper('&kintamasis');
 
 **2. Apibrėžkite kintamąjį darbuotojų metiniam atlyginimui skaičiuoti. Panaudokite šį kintamąjį užklausoje, kuri išvardintų visus darbuotojus, uždirbančius per metus 30 000 ir daugiau.
-(Pavardė ir metinis atlyginimas) **
+(Pavardė ir metinis atlyginimas)**
 define kintamasis = 30000;
 select ename,sal*12 from emp where sal*12>=&kintamasis;
 
-** 3. Išveskite į ekraną informaciją žemiau parodytu būdu. **
+**3. Išveskite į ekraną informaciją žemiau parodytu būdu.**
 select concat(ename, concat(substr('                        ',length(ename),15-length(job)-length(ename)),job)) from emp;
 
-** 4. Parašykite užklausą, pateikiančią, kiek laiko darbuotojas dirba įmonėje. Galite naudoti DEFINE komandą, kad nereikėtų pakartotinai suvedinėti išraiškų. **
+**4. Parašykite užklausą, pateikiančią, kiek laiko darbuotojas dirba įmonėje. Galite naudoti DEFINE komandą, kad nereikėtų pakartotinai suvedinėti išraiškų.**
 define kintamasis = '7839';
 select ename, trunc(months_between(sysdate,hiredate)/12) , trunc(mod(months_between(systade,hiredate)/12,12))from emp;
