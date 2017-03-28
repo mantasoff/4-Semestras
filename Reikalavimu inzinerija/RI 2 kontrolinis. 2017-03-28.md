@@ -72,9 +72,21 @@ UFK konceptų abstrakcijos lygmuo:
 - Kvalifikuoto specialisto požiūris: "Tai per daug konkretu. Formuluodamas tokias užduotis, aš susipainioju detalėse."
 - Dauguma žmonių mąsto tam tikro abstakcijos lygmens terminais ir nervinasi, jei jie yra verčiami mąstyti kito lygmens terminais.
 
-Viskas priklauso nuo konkretaus vartotojo: viskas turi būti kuo paprasčiau, bet ne per daug supaprastinta!
+Viskas priklauso nuo konkretaus vartotojo:  turi būti kuo paprasčiau, bet ne per daug supaprastinta!
 
 **Kalbos procedūriškumas**
+
+Algoritmo samprata, kuria grindžiama UFK:
+- esti procedūrinės (pvz., Pascal), deklaratyviosios (pvz., Prolog), funkcinės (pvz., Lisp), objektinės (pvz., SmallTalk) ir hibridinės (pvz., C++) programavimo kalbos;
+- UFK irgi gali būti grindžiama bet kuria iš šių paradigmų;
+
+Procedūrinėse kalbose algoritmai yra aprašomi naudojant Tiuringo mašinų formalizmą:
+- tai reiškia, kad užduotis yra aprašoma kaip (nebūtinai tiesinė) seka komandų, keičiančių tam tikro kintamųjų rinkinio (atminties) reikšmes;
+- procedūrinėse kalbose išreikštiniu būdu (nors galbūt aukšto abstrakcijos lygmens komandomis) specifikuojamas užduoties vykdymo algoritmas;
+
+Deklaratyviose kalbose algoritmai yra aprašomi naudojant Markovo natūrinių algoritmų formalizmą:
+- tai reiškia, kad užduotis yra aprašoma kaip rinkinys faktų ir loginių taisyklių, nusakančių kaip iš turimų faktų gauti norimus rezultatus;
+- deklaratyviosiose kalbose aprašoma, ką užduotis turi padaryti, bet nėra nurodoma, kokiu būdu gauti rezultatus;
 
 
 
