@@ -63,5 +63,19 @@ Interfeiso ribojimai:
 - Patogumo vartotojui (user-friendless) reikalavimai;
 - Ergonominiai reikalavimai;
 
+### Vartotojo interfeisas: UFK
+
+**Kalbos semantinė galia**
+
+UFK konceptų abstrakcijos lygmuo:
+- Nelabai kvalifikuoto specialisto požiūris: "Tai per daug bendra, kad būtų galima suprasti, ką gi konkrečiai padarys sistema pateikus tokią užduotį".
+- Kvalifikuoto specialisto požiūris: "Tai per daug konkretu. Formuluodamas tokias užduotis, aš susipainioju detalėse."
+- Dauguma žmonių mąsto tam tikro abstakcijos lygmens terminais ir nervinasi, jei jie yra verčiami mąstyti kito lygmens terminais.
+
+Viskas priklauso nuo konkretaus vartotojo: viskas turi būti kuo paprasčiau, bet ne per daug supaprastinta!
+
+**Kalbos procedūriškumas**
+
+
 
 
