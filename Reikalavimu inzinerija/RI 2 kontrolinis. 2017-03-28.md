@@ -84,10 +84,33 @@ Procedūrinėse kalbose algoritmai yra aprašomi naudojant Tiuringo mašinų for
 - tai reiškia, kad užduotis yra aprašoma kaip (nebūtinai tiesinė) seka komandų, keičiančių tam tikro kintamųjų rinkinio (atminties) reikšmes;
 - procedūrinėse kalbose išreikštiniu būdu (nors galbūt aukšto abstrakcijos lygmens komandomis) specifikuojamas užduoties vykdymo algoritmas;
 
-Deklaratyviose kalbose algoritmai yra aprašomi naudojant Markovo natūrinių algoritmų formalizmą:
+Deklaratyviose kalbose algoritmai yra aprašomi naudojant Markovo natūrinių algoritmų formalizmą:Funkcinėse kalbose algoritmai yra aprašomi naudojant rekursyviųjų funkcijų formalizmą.
+- tai reiškia, kad užduotis yra aprašoma kaip tam tikra funkcijų (atvaizdžių) kompozicija.
 - tai reiškia, kad užduotis yra aprašoma kaip rinkinys faktų ir loginių taisyklių, nusakančių kaip iš turimų faktų gauti norimus rezultatus;
 - deklaratyviosiose kalbose aprašoma, ką užduotis turi padaryti, bet nėra nurodoma, kokiu būdu gauti rezultatus;
 
+Funkcinėse kalbose algoritmai yra aprašomi naudojant rekursyviųjų funkcijų formalizmą.
+- tai reiškia, kad užduotis yra aprašoma kaip tam tikra funkcijų (atvaizdžių) kompozicija.
+- Funkcinėse kalbose aprašoma kaip, vienų funkcijų rezultatams taikant kitas funkcijas, iš pradinių duomenų gauti norimus rezultatus.
 
+Objektinėse kalbose algoritmai yra aprašomi naudojant vadinamąjį aktorių formalizmą.
+- tai reiškia, kad užduotis yra aprašoma pranešimų (reikalavimų atlikti operacijas) seka;
+- objektinėse kalbose aprašoma, kaip pakeisti pradines tam tikram rinkiniui priklausančių objektų būsenas į norimas (tai ir yra užduoties rezultatas).
 
+Kokio tipo UFK geriau pasirinkti, priklauso ir nuo programų sistemos probleminės srities, ir nuo to, per kokią sąvokų sistemą vartotojai suvokia tą probleminę sritį.
+- t.y. nuo to, kaip jų nuomone turėtų būti aprašinėjami algoritmai.
+
+**Kalbos dalykinė orientacija** 
+
+Kalbos dalykinė orientacija priklauso nuo metaforos, kuria grindžiama kalba.
+- Žmonės naujus dalykus perpranta naudodamiesi savo turimomis žiniomis ir patirtimi;
+- Bent jau pradžioje, naujas sąvokas stengiamasi išreikšti per jau žinomas sąvokas.
+- Vartotojai, bent jau pradžioje, tiap pat ando programų sistemą suvokti per tai, ką jie jau žino apie dalykinę sritį, t.y. jie bando mąstyti dalykinės srities metaforos terminais.
+
+**Metaforizavimo principas**: naujas pažinimo struktūras žmonės kuria metaforizuodamami esmas (jau išstudijuotas) pažinimo struktūras.
+
+Pavyzdys:
+- Įstaigos vadovas įsisavindamas naują duomenų apdorojimo sistemą bando ją "matyti" per įstaigą aprašančių sąvokų prizmę.
+- Tai apima įstaigos tikslus, naudojama biuro įrangą, darbuotojų vaidmenis, jų vykdomas užduotis ir darbo metu kylančių problemų sprendimo būdus.
+- Sistemos projektuotojai privalo perprasti įstaigos sąvokų sistemą ir projektuoti užduočių formulavimo kalbą taip, kad įstaigos vadovas (o taip pat ir kiti darbuotojai) galėtų formuoti užduotis jiems įprastais terminais (o ne programuotojų žargonu)
 
