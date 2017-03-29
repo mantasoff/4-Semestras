@@ -128,3 +128,34 @@ Kalbos selektyvinė geba priklauso nuo to, kokios kvalifikavimo išraiškos yra 
 - Selektyvinė geba nusako kokiu tikslumu galima filtruoti įvesties ir išvesties duomenis. Kitaip tariant, ji lemia kokiu tikslumu vartotojas gali aprašyti užduoties pradinius duomenis ir užduoties rezultatus. (pvz, ką ir kokia tvarka spausdinti norimoje gauti ataskaitoje.)
 
 **Kalbos raiškos galia (išsamumas)**
+
+UFK yra išsami jei jos raiškos priemonėmis galima specifikuoti visus užduoties aspektus.
+- Kartais UFK turi priemones tik skaičiuojamiesiems užduoties aspektams aprašyti, nes kiti aspektai (pvz., duomenų rašymas į bazes ar ataskaitų generavimas) yra aprašomi kitomis kalbomis.
+
+Kartais, kuriant UFK, nepavyksta tiksliai specifikuoti visų galimų užduočių aibę. aigi, neįmanoma ir tiksliai numatyti, kokių priemonių prireiks užduotims specifikuoti. Tokiais atvejais kalboje numatoma išplėsties taško konstrukcija ir leidžiama prie užduoties aprašymo jungti plėtinius parašytis skriptų programavimo kalbose (Perl, JavaScript ir kt.)
+
+**Sintaksė**'
+
+UFK gali būti suprojektuota kaip:
+- tekstinė kalba (pvz., sakiniai, primentantys lietuvių kalbos sakinius);
+- meniu kalba;
+- formų jakba;
+- grafinė kalba;
+- pikrogramų kalba;
+-  hiperteksto kalba;
+- ir t.t.
+
+**Užduoties pateikties protokolas (UPP)**
+
+- Užduoties aprašas yra pateikiamas sistemai pagal taisykles, numatytas atitinkamu protokolu. Formuluojant interfeiso ribojimus turi būti suformuluoti ir užduočių pateikties protokolo reikalavimai.
+- UPP aprašo, kokiais pranešimais, pateikdamas užduotį, vartotojas keičiasi su sistema, kokia eilės tvarka pranešimai yra pateikiami ir kaip, pasinaudojant atitinkama technine įranga (klaviatūra, pele ar pan.) pranešimai yra formuluojami ir perduodami.
+
+**Naudojimo paprastumo (easy-to-use) reikalavimai**
+- Vidinė darna: komandų formato standartas, klavišų naudojimo priklausomybė nuo konteksto, pranešimuose vartojamų terminų darna, manipuliavimo ekranu operacijų standartas ir t.t.
+- Išorinė darna: atitikimas išoriniams standartams (pvz., GUI standartams).
+- Akivaizdumas: interfeisas suprojektuotas metaforos teriminais.
+- Informatyvumas: informuoja apie padarytų klaidų pobūdį, aiškina kaip elgtis ir pan.
+- Prasmingumas: visi sistemos pranešimai yra glausti, informatyvūs ir formuluojami metaforos terminais.
+
+**Patogumo vartotojui (user-friendliness) reikalavimai**
+
