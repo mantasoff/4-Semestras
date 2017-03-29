@@ -163,7 +163,7 @@ UFK gali būti suprojektuota kaip:
 
 Ergoniminiai reikalavimai - kaip atsižvelgti į potencialių vartotojų psichofiziologines charakteristikas (pvz. aklus vartotojus).
 
-### Veikimo ribojimai
+## Veikimo ribojimai
 
 **Veikimo ribojimai apima:**
 - Tikslumo reikalavimus;
@@ -174,9 +174,39 @@ Ergoniminiai reikalavimai - kaip atsižvelgti į potencialių vartotojų psichof
 
 Pažeidus veikimo reikalavimus, sistema išlieka korektiška. Nėra pažeidžiama ir jos sąveika su aplinka. Tačiau yra prarandama jos operacinė kokybė. (pvz., ji veikia lėčiau, yra mažiau patikima ar labiau pažeidžiama)
 
-**Tikslumas**
+### Tikslumas
 
 Nepakanka vien tik pasakyti, kad programų sistema turi mokėti paskaičiuoti, tarkime, įmonės mėnesines išlaidas gamybai:
 - Kokiu tikslumu tai reikia paskaičiuoti?
 - Ką turi daryti sistema tuo atveju, kai jai nepakanka duomenų?
 - Kokie turi būti kiti kokybiniai tos funkcijos parametrai?
+
+Programų sistemos geba skirti panašius objektus vieną nuo kito. (pvz., du asmenis ar du skaičius):
+- Jei duomenų vaizdavimo tikslumas yra nepakankamas, sistema gali neskirti Jono Matusos (J. Matusa) ir Jurgio Matusos (J. Matusa);
+- Keturis ženklus po kablelio turintys skaičiai yra mažiau tikslūs kaip tie, kurie turi šešis ženklus po kablelio;
+- Tačiau teisingai suskaičiuotas keturis ženklus po kablelio turintis skaičius gali būti tikslesnis už neteisingai paskaičiuotą šešis ženklus po kablelio turintį skaičių.
+
+Skaičiavimų tikslumas nusako, kokio dydžio paklaidos yra leistinos sistemoje. (paklaidos gali atsirasti ne tik atliekant skaičiavimus įprasta prasme, bet ir formuojant skaitmeninį objektą) Kitaip tariant, nusako rezultatų tikslumą.  
+
+Paklaida - tai skirtumas tarp paskaičiuotos reikšmės ir tos, kuri turėtų būti gauta teoriškai.
+
+Į sistemą vedami duomenys turi tenkinti verslo taisykles (reglamentuoja duomenų tikslumą ir išsamumą).
+
+Kokio tikslumo reikia, priklauso nuo sistemos paskirties ir jos realizuojamų funkcijų pobūdžio.
+
+### Patikimumas
+
+Programų sistemos trykių neigiamo poveikio vartotojų verslo tikslams dydis. Normalaus veikimo trykių dažnio ir rimtumo matas. Pvz:
+- vidutinis laikas tarp dviejų trykių;
+- tikimybė, kad sistema nebus galima pasinaudoti;
+- vidutinis trykių dažnis;
+- dėl trykių prarandamo laiko procentas;
+
+- GIST: reliability of the system.
+- SCALE: the reliability that the system gives the right result on a search.
+- METER: measurements obtained from 1000 searches during testing.
+- MUST: More than 98% of the searches during testing;
+- PLAN: more than 99% of the searches.
+- WISH: 100 of the searcches.
+
+### Gyvibingumas
