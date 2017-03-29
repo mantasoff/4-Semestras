@@ -158,4 +158,25 @@ UFK gali būti suprojektuota kaip:
 - Prasmingumas: visi sistemos pranešimai yra glausti, informatyvūs ir formuluojami metaforos terminais.
 
 **Patogumo vartotojui (user-friendliness) reikalavimai**
+- Informavimo priemonių tinkamumas (helpfulness): ką reikia įtraukti į informavimo (help) failus ir kaip tie failai turi būti organizuoti.
+- Patrauklumas: kaip vartotojas gali individualizuoti (pritaikyti savo pomėgiams) interfeisą.
 
+Ergoniminiai reikalavimai - kaip atsižvelgti į potencialių vartotojų psichofiziologines charakteristikas (pvz. aklus vartotojus).
+
+### Veikimo ribojimai
+
+**Veikimo ribojimai apima:**
+- Tikslumo reikalavimus;
+- Patikimumo reikalavimus;
+- Gyvybingumo reikalavimus;
+- Robastiškumo reikalavimus;
+- Našumo reikalavimus;
+
+Pažeidus veikimo reikalavimus, sistema išlieka korektiška. Nėra pažeidžiama ir jos sąveika su aplinka. Tačiau yra prarandama jos operacinė kokybė. (pvz., ji veikia lėčiau, yra mažiau patikima ar labiau pažeidžiama)
+
+**Tikslumas**
+
+Nepakanka vien tik pasakyti, kad programų sistema turi mokėti paskaičiuoti, tarkime, įmonės mėnesines išlaidas gamybai:
+- Kokiu tikslumu tai reikia paskaičiuoti?
+- Ką turi daryti sistema tuo atveju, kai jai nepakanka duomenų?
+- Kokie turi būti kiti kokybiniai tos funkcijos parametrai?
