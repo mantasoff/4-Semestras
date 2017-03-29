@@ -113,4 +113,18 @@ Pavyzdys:
 - Įstaigos vadovas įsisavindamas naują duomenų apdorojimo sistemą bando ją "matyti" per įstaigą aprašančių sąvokų prizmę.
 - Tai apima įstaigos tikslus, naudojama biuro įrangą, darbuotojų vaidmenis, jų vykdomas užduotis ir darbo metu kylančių problemų sprendimo būdus.
 - Sistemos projektuotojai privalo perprasti įstaigos sąvokų sistemą ir projektuoti užduočių formulavimo kalbą taip, kad įstaigos vadovas (o taip pat ir kiti darbuotojai) galėtų formuoti užduotis jiems įprastais terminais (o ne programuotojų žargonu)
+- Kad metafora būtų  naudinga, ji turi būti išreikštiniu būdu susiseta su tuo, ką norima metaforizuoti t.. su problemine sritimi.
+- Svarbi tokios sąsajos (atvaizdžio) savybė yra jos kongruentiškumas: probleminės srities esybės ir ryšiai turi būti tiesiogiai atvaizduojami į interfeiso esybes (pikrogramas, komandų pavadinimus, objektų pavadinimus ir t.t.) ir ryšius taro jų. (galima konstruoti tik vadovaujantis konceptualizacijos principu)
 
+
+**Kalbos selektyvinė geba**
+
+Duomenų filtravimas - tai procesas, naudojant kurį iš įvesties ar išvesties duomenų srauto yra išrenkamas nurodytas sąlygas tenkinantis duomenų poaibis, pvz:
+-INCLUDE IN ATASKAITA DARBUOTOJUS WHERE ATLYGINIMAS >= 50000;
+
+Filtrai aprašomi naudojant kvalifikavimo išraiškas. Kvalifikavimo išraišką sudaro loginės operacijomis (IR,ARBA,NE t.t.) sujungti predikatai (t.y. sąlygos).
+
+Kalbos selektyvinė geba priklauso nuo to, kokios kvalifikavimo išraiškos yra leidžiamos užduočių formulavimo kalboje.
+- Selektyvinė geba nusako kokiu tikslumu galima filtruoti įvesties ir išvesties duomenis. Kitaip tariant, ji lemia kokiu tikslumu vartotojas gali aprašyti užduoties pradinius duomenis ir užduoties rezultatus. (pvz, ką ir kokia tvarka spausdinti norimoje gauti ataskaitoje.)
+
+**Kalbos raiškos galia (išsamumas)**
