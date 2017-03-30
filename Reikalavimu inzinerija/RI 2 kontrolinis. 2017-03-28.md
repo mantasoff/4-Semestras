@@ -210,3 +210,48 @@ Programų sistemos trykių neigiamo poveikio vartotojų verslo tikslams dydis. N
 - WISH: 100 of the searcches.
 
 ### Gyvibingumas
+
+Programų sistemos geba apsaugoti jos kritines funkcijas nuo trykių poveikio. (kokiu mastu sistema gebės vykdyti kritnes (gyvybines) funkcijas trykiams pažeidus kitas jos dalis)
+
+### Robastiškumas
+
+Programų sistemos geba automatiškai atkurti savo prarastą funkcionalumą, ypač, praradus jį dėl klaidingų duomenų arba dėl kokių nors ypatingų situacijų.
+
+Nusako kokiu mastu sistema geba išvengti trykių pateikus jai neteisingus duomenis arba ja neteisingai naudojantis. Pvz:
+- Operacinė sistema laikoma robastiška, jei ji geba išlikti korektiška jai pritrūkus operatyviosios ar išorinės atminties arba vykdant klaidų turinčią dalykinę programą arba tai programai elgiantis nekorektiškai, pavyzdžiui bandant pasinaudoti kitai programai priskirta atmintimi.
+
+Matų pavyzdžiai:
+- laikas, reikalingas sistemos funkcionalumui atkurti;
+- trykius iššaukiančių įvykių procentas;
+- tikimybė, kad trykio metu bus sugadinti duomenys.
+
+### Našumas
+
+Nusako kaip greitai sistema reaguoja į stimulus ir kiek resursų ji sunaudoja tai darydama.
+
+Našumo aspektai:
+- Reakcijos laikas (response time);
+- Pralaidumas (throughput);
+- Produktyvumas (efficiency);
+- Gaišties laikas (latency);
+- Masto keitimas (scalability);
+
+**Reakcijos laikas**
+
+Reakcijos laiko į įvykius (behavioural response time) reikalavimai apibūdina vartotojo sąveika su sistema:
+- Vartotojas tikisi, kad programa jam atsakys per kelias sekundes, nepriklausomai nuo kompiuterio.
+- Sistema turėtų parodyti, kad ji priėmė vartotojo pateiktą užduotį.
+- Svarbu, kad sistema atsakytų į vartotojo veiksmus.
+
+**Rezultatų pateikties laiko (operational response time) reikalavimai**
+
+Jei programų sistema kompiuterizuoja kokias nors rankiens procedūras, kurioms atlikti reikėjo visos savaitės, o dabar pakanka ienos valandos, tai be abejo jau yra didelis pasiekimas;
+
+Formuojant rezultatų pateikties laiko reikalavimus, visų pirma reikia galvoti apie tai, kiek laiko galima skirti atitinkamai verslo operacijai atlikti. (Kaip greitai turi veikti sistema, kad būtų pasiekti organizacijos verslo tikslai)
+
+**Gaišties laikas (latnecy)** 
+ 
+Kiek laiko prie nurodyto apkrovos (pvz., apdorojamų duomenų apimčių) 
+
+
+
