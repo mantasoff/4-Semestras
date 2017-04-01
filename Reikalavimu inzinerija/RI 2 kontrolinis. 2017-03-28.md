@@ -4,7 +4,7 @@
 
 Nefunkciniai reikalavimai aprašo sistemos savybes ir jos ribojimus:
 
-- Dažnai nefunkciniai reikalavimai yra netgi svarbesniuž funkcinius;
+- Dažnai nefunkciniai reikalavimai yra netgi svarbesni už funkcinius;
 - Sunku suformuot tiksliai, o jeigu netikslūs, tai tampa neverifikuojami ir praranda prasmę.
 - Jei nefunkciniai reiklavimai netenkinami, sistema yra niekam nereikalingą!
 
