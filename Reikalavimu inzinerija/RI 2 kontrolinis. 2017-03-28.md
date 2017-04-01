@@ -249,9 +249,136 @@ Jei programų sistema kompiuterizuoja kokias nors rankiens procedūras, kurioms 
 
 Formuojant rezultatų pateikties laiko reikalavimus, visų pirma reikia galvoti apie tai, kiek laiko galima skirti atitinkamai verslo operacijai atlikti. (Kaip greitai turi veikti sistema, kad būtų pasiekti organizacijos verslo tikslai)
 
-**Gaišties laikas (latnecy)** 
+**Gaišties laikas (latency)** 
  
-Kiek laiko prie nurodyto apkrovos (pvz., apdorojamų duomenų apimčių) 
+Kiek laiko prie nurodyto apkrovos (pvz., apdorojamų duomenų apimčių) dydžio gali sugaišti sistema vienam įvykiui apdoroti?
+
+**Pralaidumas (thoughput)**
+
+Kiek įvykių per nurodytą laiko tarpą prie nurodyto apkrovos dydžio turi gebėti apdoroti sistema? (apdorojamų duomenų apimčių)
+
+**Produktyvumas**
+
+Kiek resursų galima sunaudoti nurodytiems pralaidumu ir produktyvumu užtikrinti?
+
+**Masto keitimas (scalability)**
+
+Kiek papildomų resursų galima sunaudoti nurodytiems pralaidumu ir produktyvumui užtikrinti didinant sistemos apkrovas?
+
+**Response Time**
+
+- TAG: ResponseTime
+- GIST: The fastness of the search
+- SCALE: The response time of a search.
+- METER: Measurements obtained from 1000 searches during testing;
+- MUST: No more than 2 seconds 100% of the time.
+- WISG: No more than 1 second 100% of the time.
+
+## Ekonominiai ribojimai
+
+Ekonominiai ribojimai formuluojami siekiant sumažinti ilgalaikes išlaidas sistemai.
+Pažeidus ekonominius ribojimus, užsakovas ir/arba vykdytojai be reikalo praranda tam tikras pinigų sumas ir tai atsitinka todėl, kad tam tikros sistemos savybės buvo nepakankamai gerai apgalvotos.
+
+Sistema išlieka korektiška, jei jos saveika su aplinka nėra pažeidžiama ir nepraranda veikimo kokybės. 
+
+Vartotojas tiesiogiai nepajunta jokių ekonominių ribojimų pažeidimo pasekmių.
+
+Lėšos gali būti prarastos dėl to, kad su sistema sunku dirbti ją diegiant, aptarnaujant ar prižūrint, arba dėl to, kad jos komponentų negalima tiražuoti t.y. pakartotinai panaudoti kituose projektuose. 
+
+Iš ekonominių ribojimų išplaukia:
+- Diagiamumo reikalavimai;
+- Aptarnaujamumo reikalavimai;
+- Prižiūrimumo reikalavimai;
+- Tiražuojamumo reikalavimai.
+
+### Diegiamumo reikalavimai
+
+**Instaliuojamumas**
+
+Ruošinio patikimumas, instaliavimo trukmė, instaliavimo procedūros, parametrizavimas, konfigūravimo galimybės, resursų poreikis (instaliavimui).
+
+**Įsisavinumas**
+
+Matas: tai tikimybė per laiką [t1,t2] atitinkamą išsilavinimą turintis asmuo sugebės išmokti dirbti su sistema ir ją administruoti
+
+**Pastangos duomenų bazėms sukurti**
+
+**Išmokstamumas**
+
+Priklauso nuo:
+- Suprantamumo;
+- Sudėtingumo;
+
+Suprantamumas priklauso nuo koncepcinės skaidros ir virtualumo.
+
+Proramų sistema yra koncepciškai skaidri, jei ji turi darnų, akivaizdų, informatyvų, prasmingą vartotojo interfeisą ir yra komunikatyvi (tiek jos įvesties, tiek ir išvesties duomenys yra glausti, prasmingi ir pateikiami vartotojui lengvai suprantama forma.)
+
+Programų sistmea vadinama virtualia jei ji nuo vartotojo slepia kompiuterinę platformą. (t.y sistema galima pasinaudoti neturint jokių (arba minimalias) žinių apie techninės įrangos, sisteminės PĮ ar kompiuterio tinklo ypatumus.
+
+Sudėtingumas priklauso nuo jos realizuojamų funkcijų skaičiaus, tų funkcijų semantinės galios ir jų tarpusavio sąryšių.
+
+**Pastangos duomenų bazėms sukurti**
+
+Siekiant palengvinti pradinį DB kūrimą, sistemoje reikia numatyti specialiai tam skirtas funkcijas (duomenims skaitmenizuoti, naujoms DB kurti, liktinėms DB transformuoti į naują formatą ir t.t.)
+
+### Aptarnaujamumo reikalavimai
+
+Vartotojų (įskaitant sistemą administruojantį personalą) pastangos, kurių prireikia naudojanti sistemą savo užduotims vykdyti.
+
+Galimybė pritaikyti sistemą prie vartotojo įgūdžių lygmens, sistemos veiksmų siejimas su užduočių vykdymo kontekstu, specialus dažnai vykdomų operacijų palaikymas, "karštieji" klavišai ir t.t.
+
+### Prižiūrimumo reikalavimai
+
+Nuo jų priklauso sistemos darnos palaikymo ir jos perdarymų išlaidos.
+
+Prižiūrimumas priklauso nuo:
+- **Taisomumo**: Kiek pastangų reikia klaidoms pašalinti?
+- **Keičiamumo**: kiek pastangų reikia sistemai pritaikyti prie jos reikalavimų pokyčių?
+- **Plečiammo**: kiek pastangų reikia sistemos komponentam pakeisti ir jos funkcionalumui išplėsti?
+- **Perkeliamumo**: kiek pastangų reikia sistemai į kitą platformą perkelti?
+- **Komponuojamumo**: kiek pastangų reikia sistemos sąveikai su kitomis sistemomis organizuoti?
+- **Testuojamumo**: kiek pastangų reikia testams sistemos savybėms patikrinti suprojektuoti ir sukurti?
+
+### Tiražuojamumo reikalavimai
+
+- Kurie komponentai turi būti tiražuojami?
+- Kokius reikalavimus turi tenkinti tiražuojami komponentai? (t.y. kokie komponentų tiražavimo metodai planuojami naudoti)
+
+**Portability:**
+- TITLE: Application portability
+- DESC: The application should be portable with iOS and Android.
+- RAT: The adaptable platform for the application to run on.
+- DEP: none.
+
+## Politiniai ribojimai
+
+Politiniai ribojimai išplaukia iš organizacijos verslo politikos ypatumų. Tai, visų pirma, verslo paslapčių apsaugos klausimai. Sistemai pažeidus verslo ribojimus, yra pažeidžiama organizacijos verslo politika.
+
+### Apsaugos reikalavimai
+
+Apibrėžia, kokiu mastu sistema turi būti apsaugota nuo galimybių ja pasinaudoti neteisėtai. Teisėtu ps naudojimu vadinamas sistemos naudojimas pagal jos paskirtį, atliekamas tam oficialus įgaliojimus turinčio asmens ar proceso.
+
+- Gėsmės, nuo kurių turi būti apsaugota sistema;
+- Vartotojų ir procesų registravimo procedūros.
+- Vartotojų ir procesų skirstymo į klases ir teisių priskyrimo toms klasėms taisyklės.
+- Vartotojų ir procesų  atuorizavimo taisyklės.
+- Duomenų sistemos funkcijų klasifikavimo pagal slaptumo kategorijas taisyklės ir tų klasių apsaugos lygmenys.
+
+**Security**
+- TAG: CommunicationSecurity
+- GIST: Security of the communication between the systaem and server,
+- SCALE: THe messages should be encrypted for log-in communications, so others cannot get user-name and password from those messages.
+- METER: Attempts to get user-name and password through obtained messages on 1000 log0in session during testing.
+- MUST: 100% of the communication messages in the communication of a log-in session should be encrybped.
+- Communication messages: Every exchanged of information between client and server.
+
+- TAG: RestaurantOwnerLoginAccountSecurity.
+- GIST: Security of accounts.
+- SCALE: if a restaurant owner tries to log in to the web portal with a non-existing account the the restauran owner shoud not be legged in. The restaurant owner should be notified about log-in failure.
+- METER: 1000 attempts to log-in with a non-existing user account during testing/
+- MUST: 100% of the time.
+
+## Teisiniai ribojimai
 
 
 
